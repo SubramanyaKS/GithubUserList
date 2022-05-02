@@ -3,16 +3,21 @@
 }
 
 body {
-  background: #fa0303; 
+  background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 
 input {
-  background-color: #141413;
+  background-color: #72726f;
   border-radius: 15px;
   border: none;
   color: white;
@@ -35,18 +40,27 @@ input {
   background-color:#0a0a0a;
 	color: rgb(243, 242, 242);
 }
+.fa-moon-o{
+  border-radius: 50%;
+  background-color:#0a0a0a;
+	color: rgb(243, 242, 242);
+}
+.toggle{
+  text-align: right;
+  margin: 0%;
+  background-color: #171817;
+}
 button{
     font-size: 26px;
-    background-color: #f5f8f5;
-    
-    
+    background-color: #f5f8f5;   
 }
+
 input::placeholder {
   color: #bbb;
 }
 
 .card {
-  background-color: #fc4a1a;
+  background-color: rgb(8, 8, 8);
   border-radius: 20px;
   display: flex;
   padding: 3rem;
@@ -54,7 +68,7 @@ input::placeholder {
 }
 
 .avatar {
-  border: 10px solid #6733f7;
+  border: 10px solid #f5f4f8;
   border-radius: 50%;
   height: 100px;
   width: 100px;
