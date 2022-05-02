@@ -5,4 +5,4 @@ Github user list is a web app where we can search the Github User details by pro
 
 
 
-If You like the project :star repository
+If You like the project ⭐ repository
