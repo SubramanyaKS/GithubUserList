@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  background: #fa0303; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+input {
+  background-color: #141413;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 1rem;
+  
+}
+.fa{
+  padding: 0px;
+  font-size: 26px;
+  height:30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-github{
+  padding: 5px;
+  background-color:#0a0a0a;
+	color: rgb(243, 242, 242);
+}
+button{
+    font-size: 26px;
+    background-color: #f5f8f5;
+    
+    
+}
+input::placeholder {
+  color: #bbb;
+}
+
+.card {
+  background-color: #fc4a1a;
+  border-radius: 20px;
+  display: flex;
+  padding: 3rem;
+  max-width: 800px;
+}
+
+.avatar {
+  border: 10px solid #6733f7;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.repo {
+  background-color: #fc4a1a;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
