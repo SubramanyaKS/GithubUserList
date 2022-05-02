@@ -11,10 +11,14 @@ async function getUser(username) {
     //getRepos(username);
 }
 
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
 
 function createUserCard(user) {
   const cardHTML = `
-      <div class="card">
+      <div class="card" id="header">
           <div>
               <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
           </div>
