@@ -1,11 +1,13 @@
-const API_URL = "https://api.github.com/users/";
+
+//var t= config.API_URL;
+//const API_URL = "https://api.github.com/users/";
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
 async function getUser(username) {
-    const resp = await fetch(API_URL + username);
+    const resp = await fetch(config.API_URL + username);
     const respData = await resp.json();
     createUserCard(respData);
     //getRepos(username);
