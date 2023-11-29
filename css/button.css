@@ -53,15 +53,24 @@ input:checked + .slider:before {
 }
 
 body.dark-mode {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
 }
 body.dark-mode .heading{
-    background-color: #fff;
+    background-color: var(--dark-bg);
+    box-shadow: 0px 0px 5px 5px var(--dark-text);
 }
 body.dark-mode .title{
-    color: #000;
+    color: var(--dark-text);
+}
+body.dark-mode .card{
+    background-color: var(--dark-bg);
+    color:var(--dark-text);
+    box-shadow: 0px 0px 5px 5px var(--dark-text);
+}
+body.dark-mode .user-info{
+    color:var(--dark-text);
 }
 .title{
-    color:#fff;
+    color:var(--light-text);
 }
