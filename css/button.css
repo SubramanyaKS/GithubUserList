@@ -21,6 +21,7 @@ label {
     background-color: #ccc;
     transition: 0.4s;
     border-radius: 34px;
+    box-shadow: 0px 0px 2px 2px var(--dark-bg);
 }
 
 .slider:before {
@@ -30,6 +31,7 @@ label {
     width: 26px;
     left: 4px;
     bottom: 4px;
+    /* box-shadow: 0px 0px 2px 2px var(--dark-bg); */
     background-color: white;
     transition: 0.4s;
     border-radius: 50%;
@@ -46,10 +48,12 @@ input:checked + .slider:before {
 /* Dark Mode Styles */
 input:checked + .slider {
     background-color: #444;
+    box-shadow: 0px 0px 2px 2px var(--light-bg);
 }
 
 input:checked + .slider:before {
     background-color: #777;
+    /* box-shadow: 0px 0px 2px 2px var(--light-bg); */
 }
 
 body.dark-mode {
@@ -58,7 +62,7 @@ body.dark-mode {
 }
 body.dark-mode .heading{
     background-color: var(--dark-bg);
-    box-shadow: 0px 0px 5px 5px var(--dark-text);
+    box-shadow: 0 8px 6px rgba(255, 255, 255, 0.373), 0 6px 15px rgba(255, 255, 255,  0.373);
 }
 body.dark-mode .title{
     color: var(--dark-text);
@@ -73,4 +77,13 @@ body.dark-mode .user-info{
 }
 .title{
     color:var(--light-text);
+}
+body.dark-mode .avatar{
+    box-shadow: 0px 0px 5px 5px var(--light-bg);
+}
+
+body.dark-mode .heading .fa{
+    box-shadow: 0px 0px 2px 2px var(--light-bg);
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
 }
