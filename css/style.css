@@ -234,3 +234,11 @@ input::placeholder {
 .repo-pill:hover{
   background-color: var(--dark-accent-secondary);
 }
+
+.user-info ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding:0;
+  max-width: 400px;
+}
