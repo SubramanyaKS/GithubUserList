@@ -25,7 +25,7 @@ function createUserCard(user,username) {
             <div class="user-info">
                 <h2><b>${user.name}</b></h2>
                 <h4>${user.bio}</h4>
-                <ul class="info">
+                <ul class="repoinfo">
                     <li><b>${user.followers}</b> followers </li>
                     <li><b>${user.following}</b> following </li>
                     <li><b>${user.public_repos}</b> repository</li>
