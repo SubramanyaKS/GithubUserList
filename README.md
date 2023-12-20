@@ -1,6 +1,6 @@
 # GitHub User List Search
 
-Github user list is a web app where we can search the Github User details by provaiding github username using github api.
+GitHub User List is a web app that allows users to search for GitHub user details by providing a GitHub username, utilizing the GitHub API.
 
 
 ### Technology Used:
