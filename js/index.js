@@ -21,16 +21,19 @@ function createUserCard(user,username) {
         <div class="card" id="header">
             <div>
                 <img class="avatar" src="${user.avatar_url}" alt="${user.name}" />
+                <div class="github-container">
+                <a href="${user.html_url}"><i class="fa fa-github fa-2x"></i></a>
+                </div>
             </div>
             <div class="user-info">
                 <h2><b>${user.name}</b></h2>
+                <p class="user-id">@${user.login}</p>
                 <h4>${user.bio}</h4>
                 <ul class="repoinfo">
                     <li><b>${user.followers}</b> followers </li>
                     <li><b>${user.following}</b> following </li>
                     <li><b>${user.public_repos}</b> repository</li>
                 </ul>
-                <a href="${user.html_url}"><i class="fa fa-github fa-2x"></i></a>
                 <div id="repo-container"></div>
             </div>
         </div>
