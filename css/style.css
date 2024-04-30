@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 
 :root{
   --light-bg:#ffffff;
@@ -49,6 +50,12 @@ input {
   width: 100%;
   
 }
+.search-button .fa{
+  font-size: 20px;
+  height:20px;
+  width: 40px;
+
+}
 .fa{
   padding: 0px;
   font-size: 26px;
@@ -76,6 +83,7 @@ input {
 
 #search {
   padding: 15px;
+  border-radius: 45px;
   width: 100%; /* Adjust the width as needed */
 }
 
@@ -85,9 +93,9 @@ input {
   top: 0;
   height: 100%;
   padding: 2px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: var(--light-accent-primary); /* Button background color */
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #72726f; /* Button background color */
   color: #fff; /* Button text color */
   border: none;
   cursor: pointer;
@@ -95,7 +103,7 @@ input {
 
 /* Optional: Style the button on hover */
 .search-button:hover {
-  background-color: var(--light-accent-secondary); /* Hover background color */
+  background-color: var(--light-text); /* Hover background color */
 }
 
 .fa-moon-o{
@@ -152,6 +160,12 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 }
+.github-container{
+  margin: 10%;
+}
+.user-id{
+  color: blue;
+}
 
 .avatar {
   /* border: 10px solid #f5f4f8; */
@@ -183,11 +197,14 @@ input::placeholder {
   color: var(--light-text);
   margin-left: 3rem;
   /* border: 1px solid red; */
+  font-family: "Noto Sans Mono", monospace;
   height:max-content;
 }
 
 .user-info h2 {
   margin-top: 0;
+  margin-bottom: 0;
+  align-items: flex-start;
 }
 
 .user-info ul {
@@ -217,11 +234,14 @@ input::placeholder {
 }
 #repo-container{
   padding-top: 1%;
+  font-family: "Noto Sans Mono", monospace;
   /* border: 2px solid green; */
 }
 
 .repo-pill {
-  background-color: var(--light-accent-primary);
+  /* background-color: var(--light-accent-primary); */
+  background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  /* background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); */
   color: #ffffff;
   border: none;
   padding: 5px;
@@ -229,10 +249,13 @@ input::placeholder {
   margin: 3px;
   cursor: pointer;
   border-radius: 20px;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: small;
 }
 
 .repo-pill:hover{
-  background-color: var(--dark-accent-secondary);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  /* background-color: var(--dark-accent-secondary); */
 }
 
 .user-info ul {
